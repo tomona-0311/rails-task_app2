@@ -13,20 +13,20 @@
      </tr>
 
      <tr>
-       <th><%= f.label :age ,"パスワード" %></th>
+       <th><%= f.label :password ,"パスワード" %></th>
        <td><%= f.text_field :password %></td>
      </tr>
 
      <tr>
-       <th><%= f.label :introduction ,"パスワード確認" %></th>
-       <td><%= f.text_field :confirmation%></td>
+       <th><%= f.label :confirmation ,"パスワード確認" %></th>
+       <td><%= f.text_field :confirmation %></td>
      </tr>
    </table>
 
-   <div>
+    <div>
      <ul>
        <li><%= f.submit "新しいアカウントを作成する"%></li>
-       <li><%= link_to "既にアカウントをお持ちの方はログイン", :users %></li>
+
      </ul>
    </div>
  <% end %>
