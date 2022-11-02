@@ -29,10 +29,21 @@
         <input type="submit" name="commit" value="" class="d-none" data-disable-with="">
 </form>    </div>
     <div class="header-right-nav">
-     <div class="nav-item">
-     <a class="btn btn-primary my-2 mx-3" href="/trips/sign_in">ログイン</a>
-
-      <a class="btn btn-secondary" href="/trips/sign_up">登録する</a>
+      <div class="nav-item d-sm-inline-block d-none">
+        para
+      </div>
+      <div class="nav-item">
+        <img class="mx-3 p-1 host-icon nav-trigger" onclick=eventA(); alt="メニュー" src="/uploads/user/image/1849/%E3%83%88%E3%83%9E%E3%83%88">
+<script>function eventA() {
+   alert("onclickイベントが発火しました");
+ }</script>
+        <ul class="header-nav-menu">
+          <li><a href="/rooms/new">ルーム登録</a></li>
+          <li><a href="/reservations">予約済みルーム一覧</a></li>
+          <li><a href="/rooms/posts">登録済みルーム一覧</a></li>
+          <li><a href="/users/account">設定</a></li>
+          <li><a rel="nofollow" data-method="delete" href="/users/sign_out">ログアウト</a></li>
+        </ul>
       </div>
     </div>
   </div>
